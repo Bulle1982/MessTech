@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
     <meta name="description" content="mathematics, English, Swedish, Somali and Technology">
     <meta name="keywords" content="tuition in mathematics, English, Swedish, Somali and Technology">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>MEKAS</title>
 </head>
 <body>
-    <header>
+    <header id="heading-nav">
         <a href="">
             <h1 id="logo">Mekas</h1>
         </a>
         <nav>
             <ul id="menu">
                 <li>
-                    <a href="index.html" class="active">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="math.html">Mathematics</a>
+                    <a href="math.html" class="active">Mathematics</a>
                 </li>
                 <li>
                     <a href="">English</a>
@@ -39,38 +41,43 @@
             </ul>
         </nav>
     </header>
-  
     <section id="hero-outer">
         <div id="hero-image">
 
         </div>
     </section>
-      
-    <section id="meks-thics">
-     <h1 id="ethics-section-heading">Join one of MEKAS' 3 Programmes that suit your needs</h1>
-        <div class="ethos" id="left-about">
-            <div class="left-about-heading">
-                <h2 class="ethos-heading">One-On-One Tutor <i class="fa-solid fa-person-chalkboard"></i></h2>
-                <p class="ethos-paragraphs">Meet one of our professional and competent teachers and have your thirst for knowledge quenched!</p>
-        
+        <div class="game-area">
+            <div class="controls-area">
+                <button data-type="addition" class="btn btn--big btn--green"> <i class="fas fa-plus"></i>
+                </button>
+                <button data-type="subtract" class="btn btn--big btn--blue"> <i class="fas fa-minus"></i>
+                </button>
+                <button data-type="multiply" class="btn btn--big btn--orange"> <i class="fas fa-multiply"></i>
+                </button>
+                <button data-type="division" class="btn btn--big btn--red"> <i class="fas fa-divide"></i>
+                </button>
+    
             </div>
-        </div>
-        <div class="ethos" id="right-about">
-            <div class="right-about-heading">
-                <h2 class="ethos-heading">Video Lessons <i class="fa-solid fa-video"></i></h2>
-                <p class="ethos-paragraphs">Learn at the comfort of your home but following our high quality videos. Below each video is textual explanation about the concept and examples.</p>
+            
+            <div class="question-area">
+                <span id="operand1">0</span>
+                <span id="operator">X</span>
+                <span id="operand2">0</span>
+                <span>=</span>
+                <p class="answer-message">Enter Answer:</p>
+                <input id="answer-box" type="number">
             </div>
-           
+            <!--
+            <button data-type="submit" class="btn btn--big btn--gray">Submit Answer</button>
+            -->
         </div>
-        <div class="ethos" id="center-about">
-            <div class="center-about-heading">
-            <h2 class="ethos-heading">Practice Quiz <i class="fa-solid fa-question"></i></i></h2>
-            <p class="ethos-paragraphs">We have plenty of varied exercises and quizes to test the depth of your knowledge!</p>
-            </div>
-        
+        <button data-type="submit" class="btn btn--gray">Submit Answer</button>
+    
+        <div class="score-area">
+            <p class="scores">Correct Answers: <span id="score"> 0</span></p>
+            <p class="scores">Incorrect Answers: <span id="incorrect"> 0</span></p>
         </div>
-     
-    </section>
+    
     <footer>
         <ul class="social-networks">
             <li>
