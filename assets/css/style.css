@@ -89,27 +89,61 @@ header {
     }
 }
 
+/* MEKS Section style*/
+
 #meks-thics {
     height: 600px;
     width: 100%;
     background: url('../images/nav-bacground.jpg');
 }
 
-.ethos {
-    width: 30%;
-    height: 95%;
-    background-color: rgb(197, 206, 197);
-    margin-left: 1%;
-    margin-top: 1%;
-    margin-bottom: 5%;
-    display: inline-flex;
+#ethics-section-heading {
+    margin-top: 10px;
+    /*text-align: center;*/
+    color: white;
+    background-color: rgb(134, 139, 125);
+    margin-bottom: 1%;
+   
+}
+
+.ethos-heading, .ethos-paragraphs {
+    text-align: center;
+    margin-left: 2%;
+    padding-left: 2%;
+    padding-right: 1%;
+    padding-top: 1%;
+    line-height: 25px;
     
 }
 
-.ethos-heading {
-    text-align: center;
-    padding-left: 2%;
-    padding-right: 1%;
+#left-about {
+
+    float: left;
+    width: 32%;
+    height: 90%;
+    background-color: rgb(197, 206, 197);
+    border-radius: 5%;
+    margin-left: 8px;
     
+}
+
+#right-about {
+
+    float: right;
+    width: 32%;
+    height: 90%;
+    background-color: rgb(197, 206, 197);
+    border-radius: 5%;
+    margin-right: 8px;
+
+}
+
+#center-about {
+
+    margin: 0 auto;
+    width: 32%;
+    height: 90%;
+    background-color: rgb(197, 206, 197);
+    border-radius: 5%;
     
 }
