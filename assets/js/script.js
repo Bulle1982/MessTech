@@ -22,6 +22,27 @@ document.getElementById('answer-box').addEventListener('keydown', function(event
     }
 });
 
+document.getElementById('left-about').addEventListener('click', function(event) {
+    if (event.type === "click") {
+        this.style.backgroundColor = 'pink';
+    }
+
+});
+
+document.getElementById('right-about').addEventListener('click', function(event) {
+    if (event.type === "click") {
+        this.style.backgroundColor = 'blue';
+    }
+
+});
+
+document.getElementById('center-about').addEventListener('click', function(event) {
+    if (event.type === "click") {
+        this.style.backgroundColor = 'red';
+    }
+
+});
+
 /**
  * The main game "loop", called when the script is first loaded
  * and after the user's answer has been processed
@@ -30,6 +51,7 @@ function runGame(gameType) {
     // Creates two random numbers between 1 and 25
     document.getElementById('answer-box').value = "";
     document.getElementById('answer-box').focus();
+
     let num1 = Math.floor(Math.random() * 25) + 1;
     let num2 = Math.floor(Math.random() * 25) + 1;
 
