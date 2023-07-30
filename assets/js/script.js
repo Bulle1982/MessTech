@@ -137,3 +137,4 @@ function displayDivisionQuestion(operand1, operand2) {
 
 }
 
+// The English page scripts
