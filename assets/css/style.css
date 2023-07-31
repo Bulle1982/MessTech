@@ -509,23 +509,25 @@ body {
     background-color: #E6ECF0;
     box-sizing: border-box;
     width: 100%;
-    height: 65vh;
-    max-height: 450px;
+    /*height: 65vh;*/
+    max-height: 800px;
     max-width: 1200px;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
+  overflow: scroll;
    
 }
 
 .box-quiz {
-    width: 500px;
-    height: 215px;
+    width: 400px;
+    height: 250px;
     margin-top: 10px;
     margin-left: 30px;
     background-color: rgba(53, 177, 164, 0.37);
     display: inline-block;
+  
 }
 
 .box-quiz h2 {
@@ -534,7 +536,7 @@ body {
 
 .english-speech {
     width: 12%;
-    height: 20%;
+    height: 40%;
     background-color: teal;
     display: inline-block;
     border-radius: 5%;
@@ -542,6 +544,10 @@ body {
 }
 
 .english-speech  h3 {
-    padding-top: 15px;
+    padding-top: 5px;
     color: white;
+}
+
+#content-div {
+  overflow: scroll;
 }
